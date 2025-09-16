@@ -42,7 +42,7 @@ enterprise infrastructure with code.
   - Unrestricted. This is the default execution policy for non-Windows computers, which you can't change. It allows             unsigned scripts to run. This policy warns the user before running scripts and configuration files that aren't from the     local intranet zone.
   - Undefined. Indicates that there isn't an execution policy set in the current scope. If the execution policy in all          scopes is Undefined, the effective execution policy is Restricted for Windows clients and RemoteSigned for Windows          Server.
 
-
+- To change the execution policy Set-ExecutionPolicy -ExecutionPolicy <policyName>
 
 
 
