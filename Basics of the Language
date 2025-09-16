@@ -44,6 +44,8 @@ enterprise infrastructure with code.
 
 - To change the execution policy Set-ExecutionPolicy -ExecutionPolicy <policyName>
 
+- Windows PowerShell Integrated Scripting Environment
+  - 
 
 
 
