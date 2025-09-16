@@ -1,0 +1,76 @@
+Scripting Language:
+
+- Cmdlets utilize a Verb-Noun naming convention.
+
+  - Example the "Get-Command" cmdlet lists all cmdlets and functions that are registered in the command shell.
+    - The verb identifies the action for the cmdlet to perform, and the noun identifies the resource on which 
+    the cmdlet will perform its action.
+
+- Powershell incorporates the Desired State Configuration management framework (DSC). This enables you to manage
+enterprise infrastructure with code.
+
+
+- Two main Powershell platforms:
+
+  - Windows PowerShell
+
+
+  - PowerShell: Supported under Microsoft paid support mainly for enterprises
+
+
+- Windows PowerShell applications
+  - To interact with PowerShell you need an application that hosts it
+  - Can be Windows PowerShell console or Windows PowerShell Integrated Scripting Environment (ISE)
+
+- Windows PowerShell Console
+  - Similar to cmd.exe
+  - Provides the broadest windows PowerShell functionality
+
+- Windows PowerShell ISE
+  - Windows Presentation Foundation (WPF) application that provides features like an IDE
+
+- To determine which version of PowerShell you are using, enter $PSVersionTable in the PowerShell console, and then select enter.
+
+- Identifying and modifying the execution policy in PowerShell
+  - Execution policy is meant to minimize the possibility of a user unintentionally running PowerShell scripts.
+  - To identify the exection policy for the current powershell session utilzie the Get-ExecutionPolicy command
+  - AllSigned:
+    - Limits script execution on all signed scripts. This setting requires that all scripts are signed by a trusted             publisher, including scripts that you write on the local computer. It prompts you before running scripts from               publishers that you haven't yet classified as trusted or untrusted. However, verifying the signature of a script            doesn't eliminate the possibility of that script being malicious. It simply provides an extra check that minimizes this     possibility.
+  - Default. Sets the default execution policy, which is Restricted for Windows clients and RemoteSigned for Windows            servers.
+  - RemoteSigned. This is the default execution policy for Windows server computers. Scripts can run, but the policy            requires a digital signature from a trusted publisher on scripts and configuration files that have been downloaded from     the internet. This setting doesn't require digital signatures on scripts that are written on the local computer.
+    Restricted. This is the default execution policy for Windows client computers. It permits running individual commands,      but it doesn't allow scripts.
+  - Unrestricted. This is the default execution policy for non-Windows computers, which you can't change. It allows             unsigned scripts to run. This policy warns the user before running scripts and configuration files that aren't from the     local intranet zone.
+  - Undefined. Indicates that there isn't an execution policy set in the current scope. If the execution policy in all          scopes is Undefined, the effective execution policy is Restricted for Windows clients and RemoteSigned for Windows          Server.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
