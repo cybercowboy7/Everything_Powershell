@@ -1,0 +1,28 @@
+PowerShellGet:
+  - Includes cmdlets for accessing and publishing items in the PowerShell Gallery
+  - NuGet is a package manager that can obtain and install packages on windows 
+  - PowerShellGet utilizes the NuGet package manager
+  - Find-Module or Find-Script can be used to find Powershell scripts or modules in powershell gallery
+
+TLS 1.2:
+  - PowerShell Gallery requires the use of Transport Layer Security 1.2 to help secure communication
+  - To enable:
+    [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+    To fix permanently: 
+Set-ItemProperty -Path 'HKLM:\SOFTWARE\Wow6432Node\Microsoft\.NetFramework\v4.0.30319'-Name 'SchUseStrongCrypto' -Value '1' -Type DWord
+Set-ItemProperty -Path 'HKLM:\SOFTWARE\Microsoft\.NetFramework\v4.0.30319' -Name 'SchUseStrongCrypto' -Value '1' -Type DWord
+
+How to run scripts and set policies:
+  - .ps1 is associated with notepad.
+  - If script is in current directory, can utilize ".\MyScript.ps1."
+  - To check Execution policy, utilize the Get-ExecutionPolicy cmdlet 
+  - Utilize the Powershell.exe -ExecutionPolicy ByPass command
+  - To remove the attribute for a downloaded file, run the Unblock-File cmdlet
+
+Sign the scripts digitally in Windows PowerShell:
+
+  - You can add a digital signature by using the Set-AuthenticationSignature cmdlet as follows:
+
+$cert =  Get-ChildItem -Path "Cert:\CurrentUser\My" -CodeSigningCert
+Set-AuthenticodeSignature -FilePath "C:\Scripts\MyScript.ps1" -Certificate $cert
+
