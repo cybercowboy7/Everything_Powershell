@@ -45,7 +45,11 @@ enterprise infrastructure with code.
 - To change the execution policy Set-ExecutionPolicy -ExecutionPolicy <policyName>
 
 - Windows PowerShell Integrated Scripting Environment
-  - 
+  - Provides script editor, debuggerm and interactive console with tools as well.
+
+  - Panes:
+    - Script pane == editor
+    - Console pane
 
 
 
