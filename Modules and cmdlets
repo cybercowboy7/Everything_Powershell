@@ -26,3 +26,4 @@ Use Show-Command and Get-Help in PowerShell:
   - Show-Command opens a window that displays either a list of commands or a specific command's parameters
   - To display a specific commands parameters, provide the name of the command as the value for the -Name parameter.
     - Example: Show-Command -Name Get-ADUser
+
