@@ -1,0 +1,28 @@
+What are modules:
+  - Groups of related PowerShell capabilities that are bundled together into a single unit.
+  - Can check list of available modules by running: Get-Module -ListAvailable
+
+How to use them:
+  - In order to use module's cmdlets, the module must be loaded using the Import-Module cmdlet
+
+Finding cmdlets in PowerShell:
+  - Get-Command: retrieves information about a command
+  - Get-Help
+
+Using Modules to discover cmdlets:
+  - Get-Module command will display a partial list of cmdlets that the module you reference contains
+  - Get-Command -Module NetAdapter ----> restricts the results to just the commands in the designated module
+
+PowerShell Gallery:
+  - Uses PowerShellGet
+  - Find-Command cmdlet searches for commands, function, aliases etc.
+
+Get-Alias:
+  - Can use this cmdlet to discover new cmdelts
+  - Can use the New-Alias cmdlet to create a custom alias that you can map to any existing cmdlet. These are not saved between PowerShell sessions
+
+
+Use Show-Command and Get-Help in PowerShell:
+  - Show-Command opens a window that displays either a list of commands or a specific command's parameters
+  - To display a specific commands parameters, provide the name of the command as the value for the -Name parameter.
+    - Example: Show-Command -Name Get-ADUser
