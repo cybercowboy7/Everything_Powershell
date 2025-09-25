@@ -1,0 +1,22 @@
+Cmdlet verbs:
+  - Get: Retrieves a resource, such as a file or a user
+  - Set: Changes the data associated with a resource, such as a file or user property.
+  - New: Creates a resource, such as a file or user.
+  - Add: Adds a resource to a container of multiple resources.
+  - Remove: Deletes a resource from a container of multiple resources.
+
+Cmdlet nouns:
+  - Indicates what kinds of resources or objects the cmdlet affects
+  - Nouns can also have prefixes that help the grouping of related nouns into families.
+    - For example: AD such as ADUser
+
+Parameters:
+  - Parameter names begin with a dash (-)
+  - If the value that you're passing contains spaces, you need to wrap the text in quotation marks.
+
+Switches:
+  - Parameters that accept a boolean value
+  - Get-ChildItem c:\ -Recurse ---> returns no just the items in the C:\ directory, but also those in all of its sub directories.
+
+  - USEFUL:
+    Get-Help * ---> retrieves all functions in powershell pretty much
