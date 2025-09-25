@@ -27,3 +27,31 @@ Use Show-Command and Get-Help in PowerShell:
   - To display a specific commands parameters, provide the name of the command as the value for the -Name parameter.
     - Example: Show-Command -Name Get-ADUser
 
+Useful Alias:
+  - utilize the "man" alias in order to get information on a cmdlet
+
+
+Get-EventLog help:
+  - Get-Help Get-EventLog
+    - Shows different parameters etc.
+  - Omitting parameter names
+    - Get-EventLog -ComputerName LON-DC1 -LogName Application -Newest 10
+
+Specifying multiple values:
+  -ComputerName <string[]> 
+    - One way to specify multiple strings is by using a comma-separated list.
+    - Only have to enclose in quotation marks if the values themselves contain a comma or white space.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
